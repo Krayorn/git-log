@@ -12,7 +12,7 @@ res = subprocess.check_output(f'git --git-dir {address}.git\ log --pretty=format
 
 date = {}
 
-timeline = np.zeros((53, 7))
+timeline = np.zeros((7, 53))
 commit = np.zeros((7, 24))
 
 i = 0
@@ -21,7 +21,7 @@ for line in res.splitlines():
 
     calendar = date[i].isocalendar()
 
-    timeline[calendar[1]][calendar[2] -1 ] += 1
+    timeline[calendar[2] -1][calendar[1]] += 1
     commit[calendar[2] -1][date[i].hour] += 1
 
     i += 1
