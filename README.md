@@ -3,9 +3,11 @@
 `git clone git@github.com:Krayorn/git-log.git`
 
 ```
-pipenv install
+cd git-log
 
 pipenv shell
+
+pipenv install
 ```
 then simply run
 

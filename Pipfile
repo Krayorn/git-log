@@ -11,3 +11,4 @@ matplotlib = "*"
 
 [requires]
 python_version = "3.6"
+pip_version = "1.8"
