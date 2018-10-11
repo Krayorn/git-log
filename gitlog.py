@@ -2,6 +2,10 @@ import subprocess
 import sys
 from datetime import datetime
 import numpy as np
+import matplotlib
+
+# May be needed to work on Mac / but couldn't test since it was developped on windows
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 
